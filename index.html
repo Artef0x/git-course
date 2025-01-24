@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Course</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+
 </head>
+
 <body>
-    <h1>Hello Git</h1>
+    <h1>Основные команды Git</h1>
+ <ul>
+    <li>
+        <strong>git init</strong>
+        <p>Позволяет проинициализировать репозиторий в текущей папке.</p>
+    </li>
+    <li>
+        <strong>git status</strong>
+        <p>Показывает текущий статус.</p>
+    </li>
+    <li>
+        <strong>git add</strong>
+        <p>Отслеживает изменения файлов.</p>
+        <ul>
+            <li>git add index.html — добавляет index.html</li>
+            <li>git add — добавляет все файлы</li>
+        </ul>
+    </li>
+    <li>
+        <strong>git commit</strong>
+        <p>Сохраняет изменения в коммит.</p>
+        <p>git commit -m 'commit message' — создает коммит с сообщением.</p>
+    </li>
+    <li>
+        <strong>git branch</strong>
+        <p>Работа с ветками в репозитории.</p>
+        <ul>
+            <li>git branch — показывает список веток.</li>
+            <li>git branch branch-name — создает новую ветку branch-name.</li>
+            <li>git branch -D branch-name — удаляет ветку branch-name.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>git checkout</strong>
+        <p>Переключается на другую ветку.</p>
+        <ul>
+            <li>git checkout branch-name — переключается на последний коммит в ветке
+                branch-name.</li>
+            <li>git checkout -b branch-name — создает и переключается на ветку
+                branch-name.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>git merge</strong>
+        <p>Совмещает текущую ветку с выбранной.</p>
+        <p>git merge branch-name — совмещает текущую ветку с branch-name.</p>
+    </li>
+    <li>
+        <strong>git config</strong>
+        <p>Конфигурация и параметры git.</p>
+        <ul>
+            <li>git config --global user.name — показывает имя пользователя.</li>
+            <li>git config --global user.name 'new user' — изменяет имя пользователя.</li>
+            <li>git config --global user.email — показывает email пользователя.</li>
+            <li>git config --global user.email 'test@mail.ru' — изменяет email пользователя.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>git push</strong>
+        <p>Заливает текущие локальные коммиты в удаленный репозиторий.</p>
+    </li>
+    <li>
+        <strong>git pull</strong>
+        <p>Забирает изменения с удаленного репозитория в локальный.</p>
+    </li>
+    <li>
+        <strong>git clone</strong>
+        <p>Клонирует проект с удаленного репозитория.</p>
+    </li>
+</ul>
+
 </body>
 <script src="script.js"></script>
+
 </html>
